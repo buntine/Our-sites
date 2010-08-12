@@ -6,7 +6,7 @@
         ring.adapter.jetty)
   (:require [compojure.route :as route]))
 
-(def conf-path "/home/andrew/dev/clojure/balls")
+(def conf-path "/usr/local/nginx/conf/apps")
 
 (defn sites-from-conf-list []
   "Returns a sequence of strings, one for each file in 'conf-path'"
@@ -41,4 +41,4 @@
   (GET "/" [] (sites-list))
   (route/not-found "Page not found"))
 
-(run-jetty site {:port 8080})
+(run-jetty site {:port 7080})
