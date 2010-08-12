@@ -18,6 +18,13 @@ Visit: http://sites.hhdpreview.com.au
 4) Run it locally:
    $ java -cp "lib/*" clojure.main  src/sites_www/core.clj
 
+## To do
+
+0) The app currently only assumes the correct domain names
+   based on the name of the file. If someone manually changes
+   the Nginx virtual host configuration and leaves the filename
+   as-is, this app will never know.
+
 ## License
 
 Copyright (C) 2010 Hard Hat Digital (c/o Andrew Buntine)
