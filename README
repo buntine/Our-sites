@@ -27,6 +27,7 @@ or Apache. Spin up Jetty as a daemon (sudo apt-get install daemon):
    based on the name of the file. If someone manually changes
    the Nginx virtual host configuration and leaves the filename
    as-is, this app will never know.
+1) Add in the rest of the view (html, body, title, etc)
 
 ## License
 
