@@ -12,7 +12,10 @@ Visit: http://sites.hhdpreview.com.au
 
 0) Install the JVM and Clojure as per usual.
 1) Install Leiningen: http://github.com/technomancy/leiningen
-2) Clone the repo and run locally:
+2) Clone the repo
+3) Install the dependencies with Leinengin:
+   $ lein deps
+4) Run it locally:
    $ java -cp "lib/*" clojure.main  src/sites_www/core.clj
 
 ## License
