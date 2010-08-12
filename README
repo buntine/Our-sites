@@ -1,17 +1,22 @@
-# sites-www
+# Hard Hat Sites
 
-FIXME: write description
+A compojure application to list the Rails sites that are available
+on the staging server.
 
 ## Usage
 
-FIXME: write
+Should be run with Jetty, behind Nginx on the staging server.
+Visit: http://sites.hhdpreview.com.au
 
 ## Installation
 
-FIXME: write
+0) Install the JVM and Clojure as per usual.
+1) Install Leiningen: http://github.com/technomancy/leiningen
+2) Clone the repo and run locally:
+   $ java -cp "lib/*" clojure.main  src/sites_www/core.clj
 
 ## License
 
-Copyright (C) 2010 FIXME
+Copyright (C) 2010 Hard Hat Digital (c/o Andrew Buntine)
 
 Distributed under the Eclipse Public License, the same as Clojure.
