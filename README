@@ -18,7 +18,8 @@ Visit: http://sites.hhdpreview.com.au
    $ java -cp "lib/*" clojure.main  src/sites_www/core.clj
 
 On the server, I suggest running it behind a web server like Nginx
-or Apache. Spin up Jetty as a daemon (sudo apt-get install daemon).
+or Apache. Spin up Jetty as a daemon (sudo apt-get install daemon):
+  $ daemon --name=jettyserver -v --respawn -d -- java -cp "/FULL/PATH/TO/APP/lib/*" clojure.main  /FULL/PATH/TO/APP/src/sites_www/core.clj
 
 ## To do
 
